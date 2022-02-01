@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Testando id, class, pseudo-classe</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .modelo {
+            width: 200px;
+            height: 20px;
+            text-align: center;
+            background-color: lightgray;
+            border: 10px solid lightcoral;
+            padding: 20px;
+            outline: 30px solid blue;
+            margin: 50px;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover {
+            color: rgba(35, 35, 228, 0.678);
+            height: 100px;
+            width: 200px;
+        }
+
+        div:hover > p {
+            display: block;
+            color: aliceblue;
+            background-color: rgba(137, 43, 226, 0.603);
+            border: 1px solid black;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando pseudo-classe com div.</h1>
+    <p>Testando um hover</p>
+    <div>
+        Coloque o mouse aqui !
+        <p>Parabéns você acertou !</p>
+    </div>
+    <p>FIM !</p>
+
+    <h2>Modelo de Caixas teste</h2>
+
+    <p class="modelo">exemplo de Caixas</p>
+</body>
+</html>
