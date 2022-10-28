@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Azonix';
+    src: url(fonts/Azonix.otf) format('opentype');
+}
+
+:root {
+    --cor0: #2c5a87;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;/*#eff7ff*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: white;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecalho img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-lista {
+    font-size: 1.3em;
+}
+
+nav ul > li > a {
+    color: var(--cor0);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: normal;
+
+    padding: 8px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
+    cursor: pointer;
+}
+
+nav ul > li > a:hover {
+    background-color: #c4e0fd;
+    transition: .5s;
+}
+
+.item-lista:nth-child(2) {
+    margin: 0 80px;
+}
+
+.redesocial {
+    cursor: pointer;
+}
+
+.redesocial:nth-child(1) {
+    margin-right: 40px;
+}
+
+main {
+    background-color: #eff7ff;
+
+    min-width: 300px;
+    max-width: 1200px;
+    height: 557px;
+
+    margin: auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.096);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main section {
+    display: flex;
+    
+    padding: 40px;
+    margin: 0 40px;
+}
+
+main section img {
+    display: flex;
+    max-width: 600px;
+}
+
+main h1 {
+    font-size: 3em;
+    padding: 20px;
+}
+
+main p {
+    font-size: 2em;
+    padding: 20px;
+}
